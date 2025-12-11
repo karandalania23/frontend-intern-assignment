@@ -35,13 +35,14 @@ export default function QuestionCard({ data, selectedAnswer, onSelect }: Questio
             <button
               key={option}
               onClick={() => onSelect(option)}
+              aria-pressed={isSelected} 
               className={`w-full p-4 rounded-xl transition-all duration-200 font-medium
                 ${
                   isSelected
-                    
                     ? "bg-linear-to-r from-[#C6E9F7] to-[#E5F8FF] text-[#1e556e] ring-2 ring-[#CDECF8] shadow-md font-semibold"
                     : "bg-white border border-slate-100/50 text-slate-600 hover:bg-slate-50 shadow-sm hover:shadow-md"
                 }
+                focus:outline-none focus:ring-2 focus:ring-[#1e556e] focus:ring-offset-2
               `}
             >
               {option}
