@@ -77,9 +77,10 @@ export default function QuizApp() {
   return (
   <div className="min-h-screen w-full bg-[linear-gradient(to_bottom_right,#BECFEE,#71C6E2,#D9F4FA,#BECFEE)] flex items-center justify-center p-4 py-16">
     
-    {currentQuestionIndex === 0 && !isSubmitted && <DecorativePaw />}
+    
     <div className="rounded-[40px] bg-white/40 p-6 backdrop-blur-sm w-full max-w-4xl shadow-2xl">
-    <div className=" bg-[#f4fdff] backdrop-blur-md rounded-[30px] p-8 md:p-12 min-h-[600px] flex flex-col relative overflow-hidden">
+    <div className=" bg-[#f4fdff] backdrop-blur-md rounded-[30px] p-8 md:p-12 min-h-[600px] flex flex-col relative">
+      {currentQuestionIndex === 0 && !isSubmitted && <DecorativePaw />}
       <AnimatePresence mode="wait">
         {!isSubmitted ? (
           <motion.div
@@ -110,7 +111,7 @@ export default function QuizApp() {
               {currentQuestionIndex > 0 && (
                 <button
                   onClick={handlePrev}
-                  className="p-3 bg-[#CDECF8] hover:bg-[#bce3f5] text-[#1e556e] rounded-lg transition-colors"
+                  className="p-3 bg-[#CDECF8] hover:bg-[#bce3f5] px-6 text-[#1e556e] rounded-lg transition-colors"
                 >
                   <ArrowLeft size={20} />
                 </button>

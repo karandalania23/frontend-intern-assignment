@@ -45,12 +45,12 @@ export default function ResultScreen({ score, total, onRetry }: ResultScreenProp
         <span className="text-slate-600 font-medium">Keep Learning!</span>
       </div>
 
-      <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#1e556e] italic mb-6">
+      <h2 className="font-(family-name:--font-dm-serif) text-4xl md:text-5xl font-normal text-[#1e556e] italic mb-6">
         Your Final score is
       </h2>
 
       <div className="relative mb-12">
-        <div className="text-[120px] md:text-[140px] leading-none font-playfair font-bold text-[#1e556e]">
+        <div className="text-[120px] md:text-[140px] leading-none font-(family-name:--font-dm-serif) text-[#1e556e]">
           <CountUp end={percentage} />%
         </div>
       </div>
