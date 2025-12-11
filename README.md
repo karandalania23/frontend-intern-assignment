@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Developer Intern Assignment - Quiz App
 
-## Getting Started
+Hi! This is my submission for the Frontend Developer Intern assignment. I've built a pixel-perfect, interactive quiz application based on the provided Figma design, focusing on smooth animations, clean code structure, and accessibility.
 
-First, run the development server:
+## Live Demo
+**[https://frontend-intern-assignment-flax.vercel.app]**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Screenshots and Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| **Desktop View** | **Final Score** |
+| :---: | :---: |
+| <img width="1465" height="847" alt="Screenshot 2025-12-11 at 10 56 39 PM" src="https://github.com/user-attachments/assets/ff67b2b3-2163-41be-bd86-10bc154109f7" /> | <img width="1465" height="847" alt="Screenshot 2025-12-11 at 10 56 59 PM" src="https://github.com/user-attachments/assets/7c13870f-a6b1-4bd4-92d3-5c83052c916e" /> |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+| **Demo** |
+| :---: |
+| https://github.com/user-attachments/assets/a5c72b24-e3f0-4aad-b379-c16ae2f24302 |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+I chose this stack to balance performance with developer experience, matching the assignment requirements:
 
-## Deploy on Vercel
+* **Framework:** [Next.js 14](https://nextjs.org/) (App Router)
+* **Language:** [TypeScript](https://www.typescriptlang.org/) for type safety
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/) for utility-first styling
+* **Animations:** [Framer Motion](https://www.framer.com/motion/) for complex transitions
+* **Icons:** [Lucide React](https://lucide.dev/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Key Features & Implementation Details
+
+### 1. Pixel-Perfect Design
+I spent time ensuring the implementation matches the Figma file exactly.
+
+### 2. Smooth Animations
+To make the app feel alive, I added:
+
+### 3. Modular Code Structure
+I didn't want to dump everything into one file. The app is broken down into logical components:
+* `ProgressBar.tsx`: Handles the segmented progress at the top.
+* `QuestionCard.tsx`: manages the question text and options.
+* `ResultScreen.tsx`: Handles the logic for the final score display.
+* `DecorativePaw.tsx`: Encapsulates the paw/bubble logic so the main code stays clean.
+
+### 4. Accessibility (WCAG 2.1)
+I made sure the app isn't just visual, but usable for everyone.
+
+---
+
+## How to Run Locally
+
+If you want to test the code on your own machine:
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/karandalania23/frontend-intern-assignment
+    cd frontend-intern-assignment
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in browser**
+    Go to `http://localhost:3000` to see the app.
+
+---
+
+## Design Decisions & Trade-offs
+
+* **State Management:** Since this is a small, single-flow app, I used React's local `useState` instead of a global store like Redux or Context. It keeps the complexity low.
+* **CSS vs. Tailwind:** I used Tailwind because it allowed me to rapidly prototype the layout. For the specific "Glass" border effect, I combined Tailwind utility classes with specific opacity values to match the Figma layers.
+* **Responsiveness:** The requirements focused on Desktop, but I added Flexbox wrapping and padding adjustments so it doesn't break on mobile screens.
+
+---
+
+## Time Spent
+
+* **Planning & Setup:** 30 mins
+* **Core Development:** 2 hours
+* **Styling & Polish:** 1.5 hours
+* **Documentation:** 30 mins
+* **Total:** ~4.5 hours
+
+---
+
+## Resume and Cover Letter
+
+| **Resume** | **Cover Letter** |
+| :---: | :---: |
+| [Karan_Resume.pdf](https://github.com/user-attachments/files/24108861/Karan_Resume.pdf) | [cover letter.pdf](https://github.com/user-attachments/files/24108871/cover.letter.pdf) |
+
+***
+
+Thanks for checking out my work!
