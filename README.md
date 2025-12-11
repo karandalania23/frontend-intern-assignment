@@ -1,6 +1,6 @@
-# Frontend Developer Intern Assignment - Quiz App
+# Frontend Developer Intern Assignment
 
-Hi! This is my submission for the Frontend Developer Intern assignment. I've built a pixel-perfect, interactive quiz application based on the provided Figma design, focusing on smooth animations, clean code structure, and accessibility.
+Hi! This is my submission for the Frontend Developer Intern assignment. I've built an interactive quiz application based on the provided Figma design, focusing on smooth animations, clean code structure, and accessibility.
 
 ## Live Demo
 **[https://frontend-intern-assignment-flax.vercel.app]**
