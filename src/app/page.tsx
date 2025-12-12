@@ -89,10 +89,10 @@ export default function QuizApp() {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -20 }}
       transition={{ duration: 0.3 }}
-      className="w-full flex flex-col items-center flex-grow"
+      className="w-full flex flex-col items-center grow"
       aria-live="polite"
     >
-            <h1 className="font-(family-name:--font-dm-serif) text-4xl md:text-6xl font-normal mb-4 text-center bg-clip-text text-transparent bg-gradient-to-r from-[#0F3D55] via-[#1e556e] to-[#4FA3C8] pb-1">
+            <h1 className="font-(family-name:--font-dm-serif) text-4xl md:text-6xl font-normal mb-4 text-center bg-clip-text text-transparent bg-linear-to-r from-[#0F3D55] via-[#1e556e] to-[#4FA3C8] pb-1">
               Test Your Knowledge
             </h1>
             
