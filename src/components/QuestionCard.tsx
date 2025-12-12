@@ -15,7 +15,7 @@ interface QuestionCardProps {
 
 export default function QuestionCard({ data, selectedAnswer, onSelect }: QuestionCardProps) {
   return (
-    <div className="w-full max-w-2xl flex flex-col gap-4 flex-grow">
+    <div className="w-full max-w-2xl flex flex-col gap-4 grow">
       
       <motion.div
         key={`q-${data.id}`}
